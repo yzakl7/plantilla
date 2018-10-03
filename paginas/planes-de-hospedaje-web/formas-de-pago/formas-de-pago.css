@@ -1,0 +1,37 @@
+section.formas-de-pago .breadCrumbs,
+section.formas-de-pago .brief,
+section.formas-de-pago{
+    flex-direction: column
+}
+section.formas-de-pago,
+section.formas-de-pago p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    color: #333333;
+}
+
+section.formas-de-pago h2{
+    border: 2px white solid;
+    color: white;
+    -webkit-box-shadow: 3px 6px 5px 0px rgba(181,181,181,0.6);
+    -moz-box-shadow: 3px 6px 5px 0px rgba(181,181,181,0.6);
+    box-shadow: 3px 6px 5px 0px rgba(181,181,181,0.6);
+    font-weight: bolder;
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 19px;
+    background: url('../../../assets/fondoh2.jpg') no-repeat;
+    background-size: cover;
+}
+section.formas-de-pago .breadCrumbs,
+section.formas-de-pago .brief,
+section.formas-de-pago .brand-list{
+    padding: 20px;
+}
+section.formas-de-pago .brand-list{
+    flex-wrap: wrap;
+}
+section.formas-de-pago .brand-list img{
+    margin-right: 5px;
+    object-fit: contain;
+}
