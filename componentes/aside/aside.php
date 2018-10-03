@@ -2,7 +2,6 @@
     addCss("./componentes/aside/aside.css");
     addJs("./componentes/aside/aside.js");
 </script>
-    <div class="trigger"><i class="material-icons">keyboard_arrow_down</i></div>
     <ul class="links">
         <div id="planes-de-hospedaje-web-link" class="link-group">
             <li>

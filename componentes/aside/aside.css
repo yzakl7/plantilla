@@ -4,7 +4,6 @@
 }
 #aside .links a{
     cursor: pointer;
-    margin-bottom: 5px
 }
 #aside .links a i{
     font-size: 10px;
@@ -26,38 +25,29 @@
     to{transform: translateX(0)}
 }
 @media screen and (max-width:600px){
-    #aside{
-        position: relative;
-    }
-    #aside .trigger{
-        position: fixed;
-        width: 100%;
-        z-index: 10;
-        background: #f9f9f9;
-        justify-content: center;
-    }
-    #aside .trigger:hover+.links,
-    #aside .links:hover{
-        transform: scaleY(1);
-    }
+
     #aside .links{
-        position: fixed;
+        position: absolute;
         width: 100%;
         z-index: 10;
         background: #f9f9f9;
-        top: 0;
-        left: 0;
-        padding-top: 65px;
-        transform: scaleY(0);
-        transform-origin: top;
-        transition: all ease-in-out .3s;
+
+    }
+    #aside .links > *{
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-items: center;
     }
 }
 @media screen and (min-width:601px){
+    #aside .links a{
+        margin-bottom: 5px
+    }
     #aside .trigger{
         display: none;
     }
-    #aside .links{
+    #aside .links > *{
         width: 200px;
+        flex-direction: column;
     }
 }

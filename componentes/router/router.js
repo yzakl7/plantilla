@@ -22,7 +22,6 @@ function renderPage(url){
 
   activePage.id ? asideLink = document.getElementById(activePage.id.split('#')[0]+'-link'):null ;
   asideLink?asideLink.style.display = 'flex':null;
-  asideLink?asideLink.style.flexDirection = 'column':null;
 
   console.log(asideLink);
 

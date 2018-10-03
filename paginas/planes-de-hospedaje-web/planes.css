@@ -23,7 +23,6 @@ section.planes .brief,
 section.planes h2{
     border: 2px white solid;
     color: white;
-    margin-top: 20px;
     -webkit-box-shadow: 3px 6px 5px 0px rgba(181,181,181,0.6);
     -moz-box-shadow: 3px 6px 5px 0px rgba(181,181,181,0.6);
     box-shadow: 3px 6px 5px 0px rgba(181,181,181,0.6);
