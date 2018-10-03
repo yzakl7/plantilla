@@ -5,6 +5,5 @@ RewriteRule ^dominios /newweblogicahosting/
 RewriteRule ^planes-de-hospedaje-web /newweblogicahosting/
 RewriteRule ^promociones /newweblogicahosting/
 RewriteRule ^home /newweblogicahosting/
+RewriteRule ^home /newweblogicahosting/
 RewriteRule ^planes-de-hospedaje-web#formas-de-pago /newweblogicahosting/
-RewriteRule ^home /newweblogicahosting/
-RewriteRule ^home /newweblogicahosting/

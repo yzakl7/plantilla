@@ -1,0 +1,124 @@
+section.planes,
+section.planes article .nota,
+section.planes article .nota ul,
+section.planes article,
+section.planes article .planes .plan ul,
+section.planes .todos-los-planes-incluyen .lista,
+section.planes .todos-los-planes-incluyen .lista ul,
+section.planes article .planes .plan ul li:nth-last-child(4){
+    flex-direction: column
+}
+
+section.planes,
+section.planes p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    color: #333333;
+}
+
+section.planes .brief, 
+.planes .brief strong{
+    display: inline;
+}
+section.planes h2{
+    border: 2px white solid;
+    color: white;
+    margin-top: 20px;
+    -webkit-box-shadow: 3px 6px 5px 0px rgba(181,181,181,0.6);
+    -moz-box-shadow: 3px 6px 5px 0px rgba(181,181,181,0.6);
+    box-shadow: 3px 6px 5px 0px rgba(181,181,181,0.6);
+    font-weight: bolder;
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 19px;
+    background: url('../../assets/fondoh2.jpg') no-repeat;
+    background-size: cover;
+}
+section.planes .breadCrumbs,
+section.planes .brief{
+    padding: 20px;
+}
+section.planes article header{
+    justify-content: center;
+}
+section.planes .tabla-comparativa-de-planes .planes{
+    margin-top: 20px;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-evenly;
+}
+section.planes .tabla-comparativa-de-planes .planes .plan{
+    max-width: 200px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+section.planes .tabla-comparativa-de-planes .planes .plan:nth-child(2){
+    transform: translateY(-10px);
+    -webkit-box-shadow: 0px 5px 5px -5px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 5px 5px -5px rgba(0,0,0,0.75);
+    box-shadow: 0px 5px 5px -5px rgba(0,0,0,0.75);
+}
+section.planes .tabla-comparativa-de-planes .planes .plan ul li{
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+}
+section.planes .tabla-comparativa-de-planes .planes .plan ul li:not(.app){
+    border-right: 1px solid gray;
+    border-left: 1px solid gray;
+}
+section.planes .tabla-comparativa-de-planes .planes .plan ul li i{
+    color: #116cb3;
+}
+
+section.planes .tabla-comparativa-de-planes .planes .plan ul a{
+    background: #e68200;
+    padding: 15px;
+    justify-content: center;
+    color: white;
+    font-weight: bolder;
+    font-size: 15px;
+    border-bottom: #c46000 3px solid;
+}
+section.planes .tabla-comparativa-de-planes .planes .plan ul .plan-title{
+    background: #116cb3;
+    font-size: 20px;
+    color: white;
+    font-weight: bolder;
+}
+section.planes .tabla-comparativa-de-planes .planes .plan ul .plan-title span {
+    color: #eed251;
+}
+section.planes .tabla-comparativa-de-planes .planes .plan ul li:nth-child(odd):not(.plan-title):not(.app){
+    background: #f3f3f3;
+}
+section.planes .nota p,
+section.planes .nota ul,
+section.planes .todos-los-planes-incluyen h4,
+section.planes .todos-los-planes-incluyen ul{
+    font-size: 12px;
+    margin: 10px 20px;
+}
+
+section.planes .nota ul,
+section.planes .todos-los-planes-incluyen ul{
+    padding-left: 35px;
+}
+section.planes .nota ul li,
+section.planes .todos-los-planes-incluyen ul li{
+    list-style-type: disc;
+    list-style-position: inside;
+    padding: 2px 0;
+    display:list-item;
+}
+section.planes .todos-los-planes-incluyen h3{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    color: #00baff;
+    padding: 10px;
+}
+section.planes .todos-los-planes-incluyen h4{
+    background: rgb(233, 233, 233);
+}

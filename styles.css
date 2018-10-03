@@ -44,6 +44,10 @@ a{
 	text-decoration: none;
 }
 
+strong{
+	font-weight: bolder;
+}
+
 /* main */
 main{
 	display: flex;
