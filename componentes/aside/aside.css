@@ -1,15 +1,4 @@
 
-#aside .links{
-    width: 200px;
-    background: #f9f9f9;
-    flex-direction: column;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 11px;
-    padding: 10px 15px;
-    color: #666666;
-    z-index: 10;
-    
-}
 #aside .links .link-group{
     display: none;
 }
@@ -21,8 +10,54 @@
     font-size: 10px;
     text-decoration: none
 }
+#aside .links{
+    background: #f9f9f9;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    color: #666666;
+    z-index: 10;
+    padding: 10px 15px;
+    
+}
 
 @keyframes enter{
     from{transform: translateX(-100%)}
     to{transform: translateX(0)}
+}
+@media screen and (max-width:600px){
+    #aside{
+        position: relative;
+    }
+    #aside .trigger{
+        position: fixed;
+        width: 100%;
+        z-index: 10;
+        background: #f9f9f9;
+        justify-content: center;
+    }
+    #aside .trigger:hover+.links,
+    #aside .links:hover{
+        transform: scaleY(1);
+    }
+    #aside .links{
+        position: fixed;
+        width: 100%;
+        z-index: 10;
+        background: #f9f9f9;
+        top: 0;
+        left: 0;
+        padding-top: 65px;
+        transform: scaleY(0);
+        transform-origin: top;
+        transition: all ease-in-out .3s;
+    }
+}
+@media screen and (min-width:601px){
+    #aside .trigger{
+        display: none;
+    }
+    #aside .links{
+        width: 200px;
+    }
 }
