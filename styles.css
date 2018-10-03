@@ -47,8 +47,9 @@ a{
 /* main */
 main{
 	display: flex;
+	min-height: calc(100vh - 135px);
 	overflow: hidden;
-	border: 1px solid;
+	position: relative;
 }
 
 /* router */
@@ -68,7 +69,7 @@ main{
 }
 .pagina{
 	transition: all ease-in-out .3s;
-	flex: 0 0 100%;
+	flex: 1;
 	flex-direction: column;
 }
 @keyframes comeIn{
@@ -80,7 +81,4 @@ main{
 		transform: translateX(0%);
 
 	}
-}
-.dominios{
-	flex-direction: column;
 }

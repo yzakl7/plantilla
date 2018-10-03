@@ -1,14 +1,22 @@
+var head = document.head;
 function addCss(fileName) {
     
-    var head = document.head;
     var link = document.createElement("link");
-    
+
     link.type = "text/css";
     link.rel = "stylesheet";
     link.href = fileName;
     
     head.appendChild(link);
+}
+function addJs(fileName) {
+    
+    var script = document.createElement("script");
+    script.src = fileName;
+    
+    head.appendChild(script);
     }
+
 
 function handleOpenMenu(e){
     e ? e.preventDefault() : null;

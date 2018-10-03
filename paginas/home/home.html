@@ -1,36 +1,105 @@
 <script>
     addCss("./paginas/home/home.css");
 </script>
+
 <section class="home">
-  <p>home</p> 
-  <p>home</p> 
-  <p>home</p> 
-  <p>home</p> 
-  <p>home</p> 
-  <p>home</p> 
-  <p>home</p> 
-  <p>home</p> 
+  <article class="buscar-dominio wlh-card">
+    <header>
+      <h2>Busque su dominio y registrelo en línea.</h2>
+    </header>
+    <form class="pasos-busqueda">
+      <div>
+        <h3 class="paso-titulo"><p class="bullet-number">1</p><strong>Agregue su dominio</strong></h3>
+        <label>www.<input type="text"></label>
+      </div>
+      <div>
+        <h3 class="paso-titulo"><p class="bullet-number">2</p><strong>Seleccione su extensión</strong></h3>
+        <label for="">
+          <select name="select-extensiones" >
+            <option value=".com">.com</option>
+            <option value=".net">.net</option>
+            <option value=".org">.org</option>
+            <option value=".com.mx">.com.mx</option>
+            <option value=".mx">.mx</option>
+            <option value=".net.mx">.net.mx</option>
+            <option value=".edu.mx">.edu.mx</option>
+            <option value=".gob.mx">.gob.mx</option>
+            <option value=".org.mx">.org.mx</option>
+            <option value=".biz">.biz</option>
+            <option value=".tv">.tv</option>
+          </select>
+        </label>
+      </div>
+      <div>
+        <h3 class="paso-titulo"><p class="bullet-number">3</p><strong>Verifique la disponibilidad</strong></h3>
+        <label><input type="submit" value="buscar"></label>
+      </div>
+    </form>
+  </article>
+  <article class="guia-para-contratar wlh-card2">
+    <header>
+      <h2>Guía rápida para contratar</h2>
+    </header>
+    <div class="links">
+      <a onClick='handleRedirect("promociones-dominios")'> <i class="material-icons"> keyboard_arrow_right</i> Contratar hospedaje con dominio incluido</a>
+      <a onClick='handleRedirect("planes-de-hospedaje-web")'> <i class="material-icons">keyboard_arrow_right</i>Contratar hospedaje para mi dominio </a>
+    </div>
+  </article>
+  <article class="productos">
+    <div class="producto">
+      <h3>Web Hosting</h3>
+      <div class="descripcion">
+        <p>
+          <strong>Plan micro, incluye:</strong>
+          <ul>
+            <li>10GB de espacio en disco</li>
+            <li><strong>100 cuentas de correo</strong></li>
+            <li>Dominio gratis</li>
+          </ul>
+        </p>
+        <p><span class="precio">$599 /año</span></p> 
+      </div>
+      <button>contratar</button>
+    </div>
+    <div class="producto">
+      <h3>Nombre de dominios</h3>
+      <div class="descripcion">
+        <p>Aproveche esta oportinidad y registre su nombre de dominio al mejor precio del mercado.
+          <ul>
+            <li>
+              <strong>Tipo .COM a sólo </strong>
+              <span class="precio">$150</span>
+            </li>
+            <li>
+              <strong>Tipo .MX a sólo </strong>
+              <span class="precio">$330</span>
+            </li>
+          </ul>
+        </p>
+      </div>
+      <button>registrar</button>
+    </div>
+    <div class="producto">
+      <h3>Distribuidores</h3>
+      <div class="descripcion">
+        <p> Contamos con planes para diseñadores, desarrolladores y agencias de publicidad.</p>
+        <p><strong>Ofrecemos:</strong>
+          <ul>
+            <li>Espacio ilimitados de MB</li>
+            <li>Control total de tus cuentas</li>
+            <li>Soporte personalizado</li>
+          </ul>
+        </p>
+      </div>
+      <button>más detalles</button>
+    </div>
+  </article>
 </section>
 <!--  
-    <section>
-    
-      <article>
-        <header>
-          <h2> </h2>
-        </header>
-      </article>
-      
-      <article>
-        <header>
-          <h2> </h2>
-        </header>
-      </article>
-      
-    </section>
-  
-    <aside>
-          <h2> </h2>
-    </aside> -->
+  <aside>
+    <h2> </h2>
+  </aside> 
+-->
 
 
 

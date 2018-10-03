@@ -1,23 +1,37 @@
 "use strict";
 var cadena =  window.location.pathname,
-    subCadena = cadena.split('/')[2];
-
-var pages = document.getElementsByClassName("pagina");
+    subCadena = cadena.split('/')[2],
+    pages = document.getElementsByClassName("pagina"),
+    aside = document.getElementById('aside'),
+    asideContent = aside.innerHTML;
+    subCadena ? null : subCadena = 'home';
 
 function renderPage(url){
-  var activePage = document.getElementById(url?url:subCadena);
+  var asideLink, activePage = document.getElementById(url?url:subCadena);
+  
+  console.log(url?url:subCadena);
 
   for(var i=0; i < pages.length; i++){ 
     pages[i].classList.remove('active');
   }
   
   activePage.classList.add('active'); 
+
+  /* render aside */
+  aside && activePage.id === "home" ? aside.innerHTML = "" : aside.innerHTML = asideContent;
+
+  activePage.id ? asideLink = document.getElementById(activePage.id.split('#')[0]+'-link'):null ;
+  asideLink?asideLink.style.display = 'flex':null;
+  asideLink?asideLink.style.flexDirection = 'column':null;
+
+  console.log(asideLink);
+
 ;}
 
-function handleRedirect(url){
+function handleRedirect(url,aside){
   window.history.pushState( url, url,'./'+url);
   renderPage(url);
-  handleOpenMenu();
+  aside?null:handleOpenMenu(); // para que no se ejecute abrir o cerrar menu al redireccionar desde el aside
 }
 
 window.onpopstate = function(event) {
