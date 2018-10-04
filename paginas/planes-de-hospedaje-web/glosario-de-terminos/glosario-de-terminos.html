@@ -3,4 +3,38 @@
     addCss("./paginas/planes-de-hospedaje-web/glosario-de-terminos/glosario-de-terminos.css");
     addJs("./paginas/planes-de-hospedaje-web/glosario-de-terminos/glosario-de-terminos.js");
 </script>
-glosario-de-terminos
+
+
+<section class="glosario-de-terminos">
+    <h2>Glosario de terminos</h2>
+    <div class="breadCrumbs">
+        <p>Usted esta aqui: <a onClick='handleRedirect("home")'>&nbspInicio</a>&nbsp> <a onClick='handleRedirect("planes-de-hospedaje-web")'>&nbspPlanes de hospedaje web</a>&nbsp> <strong>&nbspGlosario de términos</strong></p>
+    </div>
+
+    <ul>
+        <li onClick="filtrarGlosario('a')">a</li>
+        -
+        <li onClick="filtrarGlosario('b')">b</li>
+    </ul>
+
+    <p class="brief">
+        El siguiente/glosario/glosario de términos le ayudará a conocer más acerca de nuestros servidores web y sus funciones:
+    </p>
+    <h3><strong>Letra "<span id="letra">a</span>"</strong> </h3>
+    <div id="glosario-a" class="glosario ">
+        <p class="brief">
+            <STRONG> Avispa</STRONG>
+            animalito chiquitito que pica duro
+        </p>
+    </div>
+    <div id="glosario-b" class="glosario oculto">
+        <p class="brief">
+            <STRONG> Borde</STRONG>
+            descripcion de borde etc etc etc
+        </p>
+        <p class="brief">
+            <STRONG> Borrego </STRONG>
+            Animal con mucha lana
+        </p>
+    </div>
+    </section>
