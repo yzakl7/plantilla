@@ -2,7 +2,7 @@
     addCss("./componentes/footer/footer.css");
 </script>
 
-<footer>
+<footer id="footer">
   <div class="upper-footer">
     <img src="./componentes/footer/assets/logos.jpg" alt="">
     <img src="./componentes/footer/assets/logos_pagos.jpg" alt="">

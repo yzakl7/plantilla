@@ -38,13 +38,13 @@
       <div class="row">
         <ul>
           <li><a onClick='handleRedirect("home")'>INICIO</a></li>
-          <li><a href="./contacto">CONTACTO</a></li>
-          <li><a href="./nosotros">NOSOTROS LE LLAMAMOS</a></li>
+          <li><a href="https://cp.mipanelhost.com/submitticket.php?step=2&deptid=1">CONTACTO</a></li>
+          <li><a href="https://cp.mipanelhost.com/submitticket.php?step=2&deptid=1">NOSOTROS LE LLAMAMOS</a></li>
         </ul>
       </div>
     </div>
     <div class="acceso-clientes">
-      <a href="cp.mipanelhost/clientarea.php">Acceso a clientes</a>
+      <a href="https://cp.mipanelhost.com/clientarea.php">Acceso a clientes</a>
     </div>
   </div>
   <nav>

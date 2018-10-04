@@ -41,13 +41,13 @@
         </div>
         <div id="terminos-del-servicio-link" class="link-group">
             <li>
-                <a onClick='handleRedirect("terminos-del-servicio#sobre-web-logica","aside")'> 
+                <a onClick='https://cp.mipanelhost.com/submitticket.php?step=2&deptid=1'> 
                     <i class="material-icons"> keyboard_arrow_right</i> 
                     Sobre Web Lógica Hosting
                 </a>
             </li>
             <li>
-                <a onClick='handleRedirect("terminos-del-servicio")'> 
+                <a onClick='handleRedirect("terminos-del-servicio","aside")'> 
                     <i class="material-icons"> keyboard_arrow_right</i> 
                     Términos del servicio 
                 </a>

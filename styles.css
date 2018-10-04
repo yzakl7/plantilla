@@ -52,7 +52,7 @@ strong{
 /* main */
 main{
 	display: flex;
-	min-height: calc(100vh - 135px);
+	min-height: calc(100vh - 295px);
 	overflow: hidden;
 	position: relative;
 }

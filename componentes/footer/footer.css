@@ -1,6 +1,7 @@
 footer{
     flex-direction: column;
     border-top: #d6d6d4 1px solid;
+    transition: all ease-in-out .3s;
 }
 footer .upper-footer{
     background-image: linear-gradient(to bottom, #eaeaea, #efefef, #f4f4f4, #fafafa, #ffffff, #ffffff, #ffffff);
@@ -23,7 +24,7 @@ footer .lower-footer ul li{
     padding: 0 10px;
     margin: 10px 0;
 }
-footer .lower-footer ul li{
+footer .lower-footer ul li:not(:last-child){
     border-right: 1px solid;
 }
 footer .lower-footer ul li a{

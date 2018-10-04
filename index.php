@@ -8,7 +8,6 @@
   <div class=" pagina " id="home" ><?php include './paginas/home/home.html';?></div>
   <div class=" pagina " id="planes-de-hospedaje-web#formas-de-pago" ><?php include './paginas/planes-de-hospedaje-web/formas-de-pago/formas-de-pago.html';?></div>
   <div class=" pagina " id="planes-de-hospedaje-web#glosario-de-terminos" ><?php include './paginas/planes-de-hospedaje-web/glosario-de-terminos/glosario-de-terminos.html';?></div>
-  <div class=" pagina " id="terminos-del-servicio" ><?php include './paginas/home/home.html';?></div>
-  <div class=" pagina " id="terminos-del-servicio#sobre-web-logica" ><?php include './paginas/home/home.html';?></div>
+  <div class=" pagina " id="terminos-del-servicio" ><?php include './paginas/terminos-del-servicio/terminos-del-servicio.html';?></div>
 </main>
 <?php   include './componentes/footer/footer.php'; ?>

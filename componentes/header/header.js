@@ -23,12 +23,15 @@ function handleOpenMenu(e){
     var main = document.getElementById('content') ;
     var mobileTopBar = document.getElementById('top-bar-movil') ;
     var header = document.getElementById('header') ;
+    var footer = document.getElementById('footer');
     if(main.getAttribute("style") !== "transform: translateX(250px);"){
         main.style.transform = "translateX(250px)";
+        footer.style.transform = "translateX(250px)";
         mobileTopBar.style.transform = "translateX(250px)";
         header.style.transform = "translateX(0px)";
     }else{
         main.style.transform = "translateX(0)";
+        footer.style.transform = "translateX(0)";
         mobileTopBar.style.transform = "translateX(0)";
         header.style.transform = "translateX(-255px)";
 
@@ -37,4 +40,9 @@ function handleOpenMenu(e){
     // if(contentWrapper.getAttribute("style") == ""){
     //     body.style.transform = "translateX(255px)"
     // }
+}
+
+function gotoLink(e){
+    e.preventDefault();
+    window.location = 'https://cp.mipanelhost.com/domainchecker.php'
 }
