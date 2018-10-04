@@ -35,10 +35,31 @@ section.glosario-de-terminos .breadCrumbs,
 section.glosario-de-terminos .brief{
     padding: 20px;
 }
-section.glosario-de-terminos ul{
-    justify-content: center
+section.glosario-de-terminos .breadCrumbs p{
+    flex-wrap: wrap;
 }
-
+section.glosario-de-terminos ul{
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+}
+section.glosario-de-terminos ul li{
+    cursor: pointer;
+    font-size: 15px;
+    padding:  3px;
+    margin:  2px;
+    text-decoration: underline;
+}
 section.glosario-de-terminos .glosario{
     flex-direction: column;
+}
+@media screen and (max-width: 600px){
+    section.glosario-de-terminos ul li{
+        padding:  10px;
+        background: rgb(0, 180, 255);
+        border-radius: 2px;
+        color: white;
+        font-weight: bolder;
+        text-decoration: none;
+    }
 }
