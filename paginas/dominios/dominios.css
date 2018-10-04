@@ -1,0 +1,122 @@
+section.dominios .breadCrumbs,
+section.dominios .brief,
+section.dominios{
+    flex-direction: column
+}
+section.dominios,
+section.dominios p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    color: #333333;
+}
+
+section.dominios .page-title{
+    border: 2px white solid;
+    color: white;
+    -webkit-box-shadow: 3px 6px 5px 0px rgba(181,181,181,0.6);
+    -moz-box-shadow: 3px 6px 5px 0px rgba(181,181,181,0.6);
+    box-shadow: 3px 6px 5px 0px rgba(181,181,181,0.6);
+    font-weight: bolder;
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 19px;
+    background: url('../../assets/fondoh2.jpg') no-repeat;
+    background-size: cover;
+}
+section.dominios h3{
+    justify-content: center;
+    font-size: 20px
+}
+section.dominios .breadCrumbs,
+section.dominios .brief{
+    padding: 20px;
+}
+section.dominios .breadCrumbs p{
+    flex-wrap: wrap;
+}
+
+section.dominios .buscar-dominio.wlh-card{
+    border-radius: 5px;
+    padding: 5px 5px 20px 5px;
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+    flex: 2;
+    margin: 5px 20px;
+}
+section.dominios .buscar-dominio{
+    flex-direction: column;
+}
+section.dominios .buscar-dominio header h2 {
+    margin-top: 10px;
+    margin-left: 5px;
+}
+section.dominios .buscar-dominio header h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 23px;
+    color: #01B3FB;
+    font-weight: bold;
+}
+section.dominios .buscar-dominio .pasos-busqueda{
+    flex-wrap: wrap;
+}
+section.dominios .buscar-dominio .pasos-busqueda div{
+    flex: 1;
+    flex-direction: column;
+    padding:  0 10px;
+}
+section.dominios .buscar-dominio .pasos-busqueda div:not(:nth-last-child(1)){
+    border-right: 1px dotted;
+}
+section.dominios .buscar-dominio .pasos-busqueda div h3,
+section.dominios .buscar-dominio .pasos-busqueda div label{
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 5px 0;
+    font-size: 11px;
+    color: #333333;
+}
+
+section.dominios .buscar-dominio .pasos-busqueda div label{
+    justify-content: center;
+}
+section.dominios .buscar-dominio .pasos-busqueda div h3 strong{
+    font-weight: bolder;
+}
+section.dominios .buscar-dominio .pasos-busqueda div label input{
+    width: 130px;
+}
+
+section.dominios .buscar-dominio .pasos-busqueda div h3 .bullet-number{
+    background: #01B3FB;
+    font-weight: bolder;
+    color: white;
+    padding: 2px 5px;
+    margin: 5px;
+}
+section.dominios .tablas-de-precios {
+    flex-direction: column;
+}
+section.dominios .tablas-de-precios ul{
+    margin: 20px;
+    border: 1px #cccccc solid;
+    flex-direction: column;
+}
+section.dominios .tablas-de-precios ul li{
+    flex-direction: row;
+    width: 100%;
+}
+section.dominios .tablas-de-precios ul li:first-child{
+    background: #cccccc;
+}
+section.dominios .tablas-de-precios ul li p{
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 0;
+    border: 1px #cccccc solid;
+}
+
+@media screen and (max-width: 600px){
+
+}
