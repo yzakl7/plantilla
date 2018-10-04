@@ -27,10 +27,10 @@ function renderPage(url){
 
 ;}
 
-function handleRedirect(url,aside){
+function handleRedirect(url,from){
   window.history.pushState( url, url,'./'+url);
   renderPage(url);
-  aside?null:handleOpenMenu(); // para que no se ejecute abrir o cerrar menu al redireccionar desde el aside
+  from?null:handleOpenMenu(); // para que no se ejecute abrir o cerrar menu al redireccionar desde un link fuera del menu
 }
 
 window.onpopstate = function(event) {

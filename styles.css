@@ -42,6 +42,7 @@ table {
 }
 a{
 	text-decoration: none;
+	cursor: pointer;
 }
 
 strong{
