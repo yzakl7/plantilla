@@ -22,7 +22,7 @@
 
 <body>
 <div id="top-bar-movil" class="top-bar-movil">
-  <img src="http://www.weblogicahosting.com/images/logotipo_weblogica_hosting.jpg" alt="">
+  <img onClick='handleRedirect("home","logo")' src="http://www.weblogicahosting.com/images/logotipo_weblogica_hosting.jpg" alt="logo web logica">
   <a href="cp.mipanelhost/clientarea.php">Acceso a clientes</a>
   
   <a href="" onClick="handleOpenMenu(event)"><i class="material-icons">menu</i></a>
@@ -30,7 +30,7 @@
 <header id="header">
   <a href="" onClick="handleOpenMenu(event)" class=" close-trigger"><i class="material-icons">close</i></a>
   <div class="top-bar"  id="ide">
-    <img src="http://www.weblogicahosting.com/images/logotipo_weblogica_hosting.jpg" alt="">
+    <img onClick='handleRedirect("home","logo")' src="http://www.weblogicahosting.com/images/logotipo_weblogica_hosting.jpg" alt="logo web logica">
     <div class="contacto">
       <div class="row">
         <p><i class="material-icons">smartphone</i>Lada nacional: 01 800-830-65-96</p>

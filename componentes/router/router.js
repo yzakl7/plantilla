@@ -1,6 +1,6 @@
 "use strict";
 var cadena =  window.location.pathname,
-    subCadena = cadena.split('/')[2],
+    subCadena = cadena.split('/')[3],
     pages = document.getElementsByClassName("pagina"),
     aside = document.getElementById('aside'),
     asideContent = aside.innerHTML;
