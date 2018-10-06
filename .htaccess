@@ -1,3 +1,4 @@
+#servidor local
 ErrorDocument 404 /newweblogicahosting/error.html
 Options +FollowSymLinks
 RewriteEngine On

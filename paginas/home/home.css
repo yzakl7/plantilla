@@ -5,6 +5,9 @@
 .home article{
     flex: 1;
 }
+.home article.portfolio{
+    flex: 0 0 100%;
+}
 .home .buscar-dominio.wlh-card{
     border-radius: 5px;
     padding: 5px 5px 20px 5px;

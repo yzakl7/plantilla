@@ -1,0 +1,135 @@
+#wl-slider{
+    border-bottom: 1px solid rgba(153, 153, 153, 0.555);
+    padding-bottom: 15px;
+    margin-bottom: 35px;
+}
+
+.diapositiva, #wl-slider{
+flex: 1
+}
+.diapositiva .text-container h3{
+    text-transform: uppercase;
+}
+.diapositiva .text-container a{
+    font-size: 18px;
+    font-family: ramabhadra,sans-serif;
+    padding: 0;
+    margin: 0;
+    line-height: 12px;
+    color: #01bfe3;
+}
+.diapositiva .text-container,
+.diapositiva .img-container{
+    flex-direction: column;
+}
+.diapositiva .img-container,
+.diapositiva .img-container .indicators{
+    align-items: flex-end;
+}
+.diapositiva .img-container img{
+    object-fit: contain;
+    max-width: 100%;
+}
+.diapositiva .img-container #indicators {
+    flex: 1;
+    justify-content: flex-end;
+    padding-right: 20px;
+}
+.diapositiva .img-container #indicators .indicator{
+    width: 17px;
+    height: 6px;
+    margin: 5px 1px;
+    cursor: pointer;
+    background: #666666;
+}
+.diapositiva .img-container #indicators .indicator:hover{
+    background: #01bfe3;
+
+}
+@media screen and (max-width:991px){
+    .diapositiva{
+        flex-direction: column;
+    }
+    .diapositiva .text-container h3{
+        font-family: montserrat,sans-serif;
+        font-size: 17px;
+        font-weight: 700;
+        padding: 0;
+        margin: 0;
+        line-height: 70px;
+    }
+
+    .diapositiva .text-container p{
+        position: static;
+        font-size: 13px;
+        font-weight: 300;
+        font-family: montserrat,sans-serif;
+        padding: 0;
+        margin: 0;
+        word-wrap: break-word;
+        overflow: hidden;
+        margin-bottom: 30px;
+        line-height: 20px;
+        color: #999;
+    }
+    .diapositiva .img-container img{
+        max-height: 30vw;
+    }
+}
+@media screen and (min-width:992px) and (max-width:1199px){
+    
+    .diapositiva .text-container,
+    .diapositiva .img-container{
+        flex: 1;
+    }
+    
+    .diapositiva .text-container h3{
+        font-family: montserrat,sans-serif;
+        font-size: 30px;
+        font-weight: 700;
+        padding: 0;
+        margin: 0;
+        line-height: 70px;
+    }
+
+    .diapositiva .text-container p{
+        font-size: 20px;
+        font-weight: 300;
+        font-family: montserrat,sans-serif;
+        padding: 0;
+        margin: 0;
+        line-height: 20px;
+        margin-bottom: 30px;
+        color: #999;
+    }
+    
+}
+@media screen and (min-width:1200px){
+    .diapositiva .text-container,
+    .diapositiva .img-container{
+        flex: 1;
+    }
+    
+    .diapositiva .text-container h3{
+        font-family: montserrat,sans-serif;
+        font-size: 70px;
+        font-weight: 700;
+        padding: 0;
+        margin: 0;
+        line-height: 70px;
+    }
+
+    .diapositiva .text-container p{
+        font-size: 20px;
+        font-weight: 300;
+        font-family: montserrat,sans-serif;
+        padding: 0;
+        margin: 0;
+        line-height: 20px;
+        color: #999;
+        margin-bottom: 30px;
+    }
+}
+
+
+
