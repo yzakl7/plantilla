@@ -16,21 +16,23 @@ var diapositivas = [
         alt:'Dondé'
     },
     {
-        titulo: 'HOLA! INTERNET!',
+        titulo: 'HOLO! INTERNET!',
         descripcion: 'Fusionando la tradición con la modernidad, Galletas Dondé utiliza las tendencias actuales en tecnología para fortalecer vínculos con sus consumidores.',
         link: '',
         img: './componentes/slider/img/donde.jpg',
         alt:'Dondé'
     },
     {
-        titulo: 'HOLA! INTERNET!',
+        titulo: 'HOLO! INTERNET!',
         descripcion: 'Fusionando la tradición con la modernidad, Galletas Dondé utiliza las tendencias actuales en tecnología para fortalecer vínculos con sus consumidores.',
         link: '',
         img: './componentes/slider/img/donde.jpg',
         alt:'Dondé'
     },
-]
 
+
+]
+/* Reder de diapositivas */
 for(var i = 0; i < diapositivas.length; i++){
     var 
         indicators = document.getElementById('indicators'),
@@ -65,14 +67,15 @@ for(var i = 0; i < diapositivas.length; i++){
     slider.appendChild(slide);
 }
 
-var current, previous
+
+/* Animaciones de cambio de diapositiva */
+var current, previous, loop
 
 function showSlide(n){
-    current = n
+    current = n;
     if(typeof previous != 'number'){
         previous = 0
     }
-
     if(current != previous){
         if(current > previous){
             document.getElementById('diapositiva-'+previous).classList = 'diapositiva toRight'
@@ -82,9 +85,20 @@ function showSlide(n){
             document.getElementById('diapositiva-'+current).classList = "diapositiva fromRight"
         }
     }
-    
-    previous = n
-    
+    previous = n;
+    if(n < diapositivas.length-1){
+        n++
+    }else{
+        n=0
+    }
+    clearTimeout(loop)
+    loop = setTimeout(
+        function(){
+            showSlide(n)
+        },5000
+    )
 }
 
-u
+
+showSlide(0)
+/* swipes movil */

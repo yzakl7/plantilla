@@ -35,18 +35,18 @@ flex: 1
     display: none;
 }
 .diapositiva.fromLeft{
-    animation: fromLeft .3s ease-in-out;
+    animation: fromLeft .5s ease-in-out;
 }
 .diapositiva.fromRight{
-    animation: fromRight .3s ease-in-out;
+    animation: fromRight .5s ease-in-out;
 }
 .diapositiva.toLeft{
-    animation: toLeft .3s ease-in-out forwards;
+    animation: toLeft .5s ease-in-out forwards;
     position: absolute;
     top: 10px;
 }
 .diapositiva.toRight{
-    animation: toRight .3s ease-in-out forwards;
+    animation: toRight .5s ease-in-out forwards;
     position: absolute;
     top: 10px;
 }
