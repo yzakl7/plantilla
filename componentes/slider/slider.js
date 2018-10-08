@@ -52,6 +52,7 @@ for(var i = 0; i < diapositivas.length; i++){
         `
     indicator.setAttribute('onClick' ,'showSlide('+i+')')
     indicator.classList = 'indicator'
+    indicator.setAttribute('id', 'indicator-'+i)
     
     indicators.appendChild(indicator)
 
@@ -80,10 +81,16 @@ function showSlide(n){
         if(current > previous){
             document.getElementById('diapositiva-'+previous).classList = 'diapositiva toRight'
             document.getElementById('diapositiva-'+current).classList = "diapositiva fromLeft"
+            document.getElementById('indicator-'+previous).style.background = '#666666'
+            document.getElementById('indicator-'+current).style.background = '#01bfe3'
         }else{
+            document.getElementById('indicator-'+previous).style.background = '#666666'
+            document.getElementById('indicator-'+current).style.background = '#01bfe3'
             document.getElementById('diapositiva-'+previous).classList = 'diapositiva toLeft'
             document.getElementById('diapositiva-'+current).classList = "diapositiva fromRight"
         }
+    }else{
+        document.getElementById('indicator-'+current).style.background = '#01bfe3'
     }
     previous = n;
     if(n < diapositivas.length-1){

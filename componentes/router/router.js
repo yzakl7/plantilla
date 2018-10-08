@@ -9,7 +9,6 @@ var cadena =  window.location.pathname,
 function renderPage(url){
   var asideLink, activePage = document.getElementById(url?url:subCadena);
   
-  console.log(url?url:subCadena);
 
   for(var i=0; i < pages.length; i++){ 
     pages[i].classList.remove('active');
@@ -23,7 +22,6 @@ function renderPage(url){
   activePage.id ? asideLink = document.getElementById(activePage.id.split('#')[0]+'-link'):null ;
   asideLink?asideLink.style.display = 'flex':null;
 
-  console.log(asideLink);
 
 ;}
 
