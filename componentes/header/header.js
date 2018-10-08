@@ -20,19 +20,20 @@ function addJs(fileName) {
 
 function handleOpenMenu(e){
     e ? e.preventDefault() : null;
-    var main = document.getElementById('content') ;
-    var mobileTopBar = document.getElementById('top-bar-movil') ;
+    // var main = document.getElementById('content') ;
+    // var mobileTopBar = document.getElementById('top-bar-movil') ;
     var header = document.getElementById('header') ;
-    var footer = document.getElementById('footer');
-    if(main.getAttribute("style") !== "transform: translateX(250px);"){
-        main.style.transform = "translateX(250px)";
-        footer.style.transform = "translateX(250px)";
-        mobileTopBar.style.transform = "translateX(250px)";
+    // var footer = document.getElementById('footer');
+    console.log(header.getAttribute("style"));
+    if(!header.getAttribute("style") || header.getAttribute("style") == "transform: translateX(-255px);"){
+        // main.style.transform = "translateX(250px)";
+        // footer.style.transform = "translateX(250px)";
+        // mobileTopBar.style.transform = "translateX(250px)";
         header.style.transform = "translateX(0px)";
     }else{
-        main.style.transform = "translateX(0)";
-        footer.style.transform = "translateX(0)";
-        mobileTopBar.style.transform = "translateX(0)";
+        // main.style.transform = "translateX(0)";
+        // footer.style.transform = "translateX(0)";
+        // mobileTopBar.style.transform = "translateX(0)";
         header.style.transform = "translateX(-255px)";
 
     }
