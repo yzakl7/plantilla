@@ -2,6 +2,8 @@
     border-bottom: 1px solid rgba(153, 153, 153, 0.555);
     padding-bottom: 15px;
     margin-bottom: 35px;
+    flex-wrap: wrap;    
+    flex-direction: column-reverse;
 }
 
 .diapositiva, #wl-slider{
@@ -22,27 +24,84 @@ flex: 1
 .diapositiva .img-container{
     flex-direction: column;
 }
-.diapositiva .img-container,
-.diapositiva .img-container .indicators{
+.diapositiva .img-container{
     align-items: flex-end;
 }
 .diapositiva .img-container img{
     object-fit: contain;
     max-width: 100%;
 }
-.diapositiva .img-container #indicators {
-    flex: 1;
-    justify-content: flex-end;
-    padding-right: 20px;
+.diapositiva.hidden{
+    display: none;
 }
-.diapositiva .img-container #indicators .indicator{
+.diapositiva.fromLeft{
+    animation: fromLeft .3s ease-in-out;
+}
+.diapositiva.fromRight{
+    animation: fromRight .3s ease-in-out;
+}
+.diapositiva.toLeft{
+    animation: toLeft .3s ease-in-out forwards;
+    position: absolute;
+    top: 10px;
+}
+.diapositiva.toRight{
+    animation: toRight .3s ease-in-out forwards;
+    position: absolute;
+    top: 10px;
+}
+@keyframes fromLeft{
+    from{
+        opacity: 0;
+        transform: translateX(100%)
+    }
+    to{
+        transform: translateX(0)
+    }
+}
+
+@keyframes fromRight{
+    from{
+        opacity: 0;
+        transform: translateX(-100%)
+    }
+    to{
+        transform: translateX(0);
+    }
+}
+@keyframes toLeft{
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(100%);
+        opacity: 0;
+    }
+}
+
+@keyframes toRight{
+    from{
+        transform: translateX(0)
+    }
+    to{
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+}
+
+
+#indicators {
+    padding-right: 20px;
+    justify-content:flex-end;
+}
+#indicators .indicator{
     width: 17px;
     height: 6px;
     margin: 5px 1px;
     cursor: pointer;
     background: #666666;
 }
-.diapositiva .img-container #indicators .indicator:hover{
+#indicators .indicator:hover{
     background: #01bfe3;
 
 }
