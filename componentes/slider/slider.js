@@ -62,6 +62,7 @@ for(var i = 0; i < diapositivas.length; i++){
         slide.classList.add('hidden');
     }
     slide.setAttribute("id", "diapositiva-"+i);
+    slide.setAttribute("draggable","true");
     // slide.id('diapositiva-'+i);
     slide.innerHTML = snippet;
 
@@ -108,4 +109,44 @@ function showSlide(n){
 
 
 showSlide(0)
-/* swipes movil */
+
+
+
+/* swipes para movil */
+const _C = document.getElementById('wl-slider');
+
+let ii = 0, x0 = null;
+
+
+
+function unify(e) {	
+    clearTimeout(loop)
+    return e.changedTouches ? e.changedTouches[0] : e 
+};
+
+function lock(e) { x0 = unify(e).clientX };
+
+function move(e) {
+	if(x0 || x0 === 0) {
+		let dx = unify(e).clientX - x0, s = Math.sign(dx);
+
+        if((ii > 0 || s < 0) )
+            if(current != diapositivas.length-1){
+                showSlide(current+1)
+            }
+        x0 = null
+
+        if((ii < 0 || s > 0) )
+            if(current != 0){
+                showSlide(current-1)
+                clearTimeout(loop)
+            }
+        x0 = null
+	}
+};
+
+_C.addEventListener('mousedown', lock, false);
+_C.addEventListener('touchstart', lock, false);
+
+_C.addEventListener('mouseup', move, false);
+_C.addEventListener('touchend', move, false);
