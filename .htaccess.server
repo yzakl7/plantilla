@@ -1,0 +1,18 @@
+RewriteEngine On
+RewriteBase /webmaster/newweblogicahosting/
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^([^?]*) index.php [L]
+
+ErrorDocument 404 http://wlapps.net/webmaster/newweblogicahosting/error.html
+
+#servidor local
+# ErrorDocument 404 /newweblogicahosting/error.html
+# Options +FollowSymLinks
+# RewriteEngine On
+# RewriteRule ^dominios /newweblogicahosting/
+# RewriteRule ^planes-de-hospedaje-web /newweblogicahosting/
+# RewriteRule ^promociones /newweblogicahosting/
+# RewriteRule ^home /newweblogicahosting/
+# RewriteRule ^home /newweblogicahosting/
+# RewriteRule ^planes-de-hospedaje-web#formas-de-pago /newweblogicahosting/

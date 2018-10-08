@@ -4,31 +4,18 @@ var diapositivas = [
     {
         titulo: 'HOLA! INTERNET!',
         descripcion: 'Fusionando la tradición con la modernidad, Galletas Dondé utiliza las tendencias actuales en tecnología para fortalecer vínculos con sus consumidores.',
-        link: '',
+        link: 'https://www.weblogica.mx/sitio-web/galletas-donde/',
         img: './componentes/slider/img/donde.jpg',
         alt:'Dondé'
     },
     {
-        titulo: 'HOLO! INTERNET!',
-        descripcion: 'Fusionando la tradición con la modernidad, Galletas Dondé utiliza las tendencias actuales en tecnología para fortalecer vínculos con sus consumidores.',
-        link: '',
-        img: './componentes/slider/img/donde.jpg',
-        alt:'Dondé'
+        titulo: 'ESTRENANDO SITIO WEB',
+        descripcion: 'Creamos para Mazda Sureste un sitio web creativo y funcional, al mismo nivel de las grandes marcas.',
+        link: 'https://www.weblogica.mx/sitio-web/mazda-sureste-sitio-web/',
+        img: './componentes/slider/img/mazda.jpg',
+        alt:'Mazda'
     },
-    {
-        titulo: 'HOLO! INTERNET!',
-        descripcion: 'Fusionando la tradición con la modernidad, Galletas Dondé utiliza las tendencias actuales en tecnología para fortalecer vínculos con sus consumidores.',
-        link: '',
-        img: './componentes/slider/img/donde.jpg',
-        alt:'Dondé'
-    },
-    {
-        titulo: 'HOLO! INTERNET!',
-        descripcion: 'Fusionando la tradición con la modernidad, Galletas Dondé utiliza las tendencias actuales en tecnología para fortalecer vínculos con sus consumidores.',
-        link: '',
-        img: './componentes/slider/img/donde.jpg',
-        alt:'Dondé'
-    },
+    
 
 
 ]
@@ -47,7 +34,8 @@ for(var i = 0; i < diapositivas.length; i++){
                 <a href="${diapositivas[i].link}">Conoce más</a>
             </div>
             <div class="img-container">
-                <img src="${diapositivas[i].img}" alt="${diapositivas[i].alt}">
+                <img src="${diapositivas[i].img}" alt="${diapositivas[i].alt}"
+                onclick="document.location='${diapositivas[i].link}';return false;">
             </div>
         `
     indicator.setAttribute('onClick' ,'showSlide('+i+')')

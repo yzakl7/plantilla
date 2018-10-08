@@ -10,6 +10,7 @@
   <meta name="Author" content="[www.weblogica.com.mx]" />
   <meta name="ROBOTS" content="NOARCHIVE" />
   <meta name="revisit-after" content="15 days" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<title>"Web Hosting en Mexico, Hospedaje Web para Empresas."</title>
   <link rel="stylesheet" type="text/css" href="styles.css" />
   <link rel="stylesheet" type="text/css" href="./componentes/header/header.css" />
